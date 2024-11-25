@@ -21,4 +21,4 @@
 ## 📋 **كيفية البدء**
 1. **قم بتنزيل أو استنساخ المستودع**:
    ```bash
-   git clone https://github.com/F-BAJBYR13/Terhalkum.git
+   git clone https://github.com/F-BAJBYR/Terhalkum.git
