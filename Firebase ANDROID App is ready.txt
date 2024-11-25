@@ -1,0 +1,45 @@
+PS C:\Users\m3809\AndroidStudioProjects\TRHALKM> firebase apps:create android "Trhalkm Android App" --package-name=com.example.trhalkm --project=trhalkm-cfe13
+>>
+Create your ANDROID app in project trhalkm-cfe13:
+✔ Creating your Android app
+
+🎉🎉🎉 Your Firebase ANDROID App is ready! 🎉🎉🎉
+
+App information:
+  - App ID: 1:96283036284:android:383b32b41350c215c6d7f9
+  - Display name: Trhalkm Android App
+  - Package name: com.example.trhalkm
+
+You can run this command to print out your new app's Google Services config:
+  firebase apps:sdkconfig ANDROID 1:96283036284:android:383b32b41350c215c6d7f9
+PS C:\Users\m3809\AndroidStudioProjects\TRHALKM>  firebase apps:sdkconfig ANDROID 1:96283036284:android:383b32b41350c215c6d7f9
+✔ Downloading configuration data of your Firebase ANDROID app
+{
+  "project_info": {
+    "project_number": "96283036284",
+    "project_id": "trhalkm-cfe13",
+    "storage_bucket": "trhalkm-cfe13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96283036284:android:383b32b41350c215c6d7f9",
+        "android_client_info": {
+          "package_name": "com.example.trhalkm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN4WWcwrvMDdLE5qWw5hcK40rLatOIwPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

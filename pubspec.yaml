@@ -1,0 +1,55 @@
+name: terhalkum
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.1.0
+  google_maps_flutter: ^2.2.0
+  firebase_core: ^3.4.1
+  cloud_firestore: ^5.4.1
+  firebase_auth: ^5.2.1
+  http: ^0.13.6
+  provider: ^6.0.0
+  logging: ^1.0.2
+  google_generative_ai: ^0.0.1-dev
+  cupertino_icons: ^1.0.8
+  geolocator: ^10.1.0
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+Augmented Reality Plugin: ar_flutter_plugin 0.7.3
+Stripe Payment: ^2024-06-20
+Path Provider: ^2.1.4
+Shared Preferences: ^2.3.2
+Flutter Local Notifications: ^17.2.2
+ar_flutter_plugin: ^0.7.3
+flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.6
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/img/background.png
+    - assets/img/hotel_background.png
+    - assets/img/map.png
+    - assets/img/sunset.png

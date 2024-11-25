@@ -1,0 +1,64 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace 'www.terhalkum.com' // Replace with your package name
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "www.terhalkum.com"
+        minSdkVersion 24
+        targetSdkVersion 33  // Updated to latest API level
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+        // Enable lint warnings for deprecated APIs
+
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+        freeCompilerArgs += ["-Xlint:deprecation"]
+
+    }
+
+    defaultConfig {
+        defaultConfig {
+            applicationId "www.terhalkum.com"
+            minSdkVersion 24  // Changed from 21 to 23
+            targetSdkVersion 33
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+
+    buildTypes {
+        release {
+            // Other configurations...
+            shrinkResources = true // Corrected property
+            minifyEnabled = true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'androidx.annotation:annotation:1.8.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}
+flutter {
+    source = "../.."
+}
